@@ -50,10 +50,6 @@ The system integrates with ATM transaction workflows, actively denying masked/he
 
 ---
 
-## 🖥️ Screenshots
-
-> _Add images or GIFs here showing the live detection interface, block alerts, and YOLO detection boxes._
-
 ---
 
 ## 🔧 Setup Instructions
@@ -63,3 +59,30 @@ The system integrates with ATM transaction workflows, actively denying masked/he
 ```bash
 git clone https://github.com/pravigowda18/yolo-atm-security.git
 cd yolo-atm-security
+```
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3️⃣ Run the Flask Server
+```bash
+python app.py
+```
+Then open your browser and visit:
+👉 http://127.0.0.1:5000
+
+### 📡 API Endpoints
+   | Endpoint             | Method | Description                           |
+| -------------------- | ------ | ------------------------------------- |
+| `/`                  | GET    | Renders the homepage (index.html)     |
+| `/video`             | GET    | Render video upload page              |
+| `/webcam           ` | GET    | Render live detection page |
+| `/upload      `      | POST   | Starts detection video              |
+| `/video_feed `       | POST   | start live video detection               |
+
+### 🧑‍💻 Author
+## Praveen S
+- 📧 Email: pravisb0002@gmail.com
+- 💼 LinkedIn: linkedin.com/in/praveens182002
+- 🌐 Portfolio: pravigowda18.github.io/pravigowda18/
+- 📦 GitHub Repo: Automatic Car Number Plate Recognition with PaddleOCR
